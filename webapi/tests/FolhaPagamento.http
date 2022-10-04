@@ -1,0 +1,16 @@
+GET http://localhost:5000/api/FolhaPagamento/listar
+###
+
+POST http://localhost:5000/api/FolhaPagamento/cadastrar
+Content-Type: application/json
+
+{
+    "FuncionarioId" : 12,
+    "ValorHora" : 300,
+    "QuantidadeHoras" : 10,
+    "Mes" : 10,
+    "Ano" : 2021
+}
+
+###
+GET http://localhost:5000/api/FolhaPagamento/filtrar/10/2021

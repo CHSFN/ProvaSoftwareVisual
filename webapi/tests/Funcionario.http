@@ -1,0 +1,29 @@
+GET http://localhost:5000/api/Funcionario/listar
+###
+
+POST http://localhost:5000/api/Funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Funcionario pobre",
+    "Cpf" : "12345678911",
+    "Salario" : "2",
+    "Email" : "funcionario@boladegolfe.com",
+    "DataNascimento" : "2012-12-12"
+}
+
+###
+GET http://localhost:5000/api/Funcionario/buscar/123
+
+###
+DELETE http://localhost:5000/api/Funcionario/deletar/2
+
+###
+PATCH http://localhost:5000/api/Funcionario/editar
+Content-Type: application/json
+
+{
+    "Id" : "3",
+    "Nome" : "funcionario Cadastrado",
+    "Cpf" : "123"
+}
